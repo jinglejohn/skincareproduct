@@ -1,0 +1,84 @@
+
+
+
+
+@font-face {
+    font-family: 'sailechairline';
+    src: url('type_dynamic_-_sailec_hairline-webfont.woff2') format('woff2'),
+         url('type_dynamic_-_sailec_hairline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'saileclight_italic';
+    src: url('type_dynamic_-_sailec_light_italic-webfont.woff2') format('woff2'),
+         url('type_dynamic_-_sailec_light_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'saileclight';
+    src: url('../fonts/type_dynamic_-_sailec_light-webfont.woff2') format('woff2'),
+         url('../fonts/type_dynamic_-_sailec_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sailecmedium_italic';
+    src: url('type_dynamic_-_sailec_medium_italic-webfont.woff2') format('woff2'),
+         url('type_dynamic_-_sailec_medium_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sailecmedium';
+    src: url('../fonts/type_dynamic_-_sailec_medium-webfont.woff2') format('woff2'),
+         url('../fonts/type_dynamic_-_sailec_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sailecregular_italic';
+    src: url('type_dynamic_-_sailec_regular_italic-webfont.woff2') format('woff2'),
+         url('type_dynamic_-_sailec_regular_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sailecthin_italic';
+    src: url('type_dynamic_-_sailec_thin_italic-webfont.woff2') format('woff2'),
+         url('type_dynamic_-_sailec_thin_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

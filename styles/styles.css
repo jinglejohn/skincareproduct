@@ -1,0 +1,495 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+body{
+    width:100%;
+}
+
+:root{
+    --blue-color: #151442;
+    --white-color: #FFF;
+    --dark-green-color:#102421;
+    --light-green-color:#C7E1BF;
+    --text-green-color:#102522;
+    --light-gray-color:#D2D2D2;
+}
+
+.nopadding{
+    padding: 0 !important;
+   margin: 0 !important;
+}
+
+a{
+    cursor: pointer;
+}
+.text-center{
+    text-align: center;
+}
+
+
+.container{
+    display: grid;
+    grid-template-rows: 1.1fr 0.8fr;
+}
+
+
+/*----------------------------Header---------------------------*/
+
+
+header{
+    background-color:var(--white-color);
+}
+
+.header{
+    width:100%;
+    position:relative;
+    z-index:999;
+    }
+
+   .logo{
+       background: url("../images/logoBlack.svg");
+   }
+
+nav{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding:3rem 6rem;
+    z-index:9999;
+    flex-wrap: wrap;
+}
+
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:2.8em;
+}
+
+.nav-ul li{
+    list-style: none;
+    margin:0 1.5rem;
+}
+
+.nav-ul li a{
+    font-size:1.2rem;
+    text-decoration: none;
+    position: relative;
+    font-family: 'sailecmedium';
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color:var(--blue-color);
+}
+
+.white-nav{
+    background:var(--white-color);
+    box-shadow: 3px 8px 3px -6px rgba(148,148,148,0.57);
+    -webkit-box-shadow: 3px 8px 3px -6px rgba(148,148,148,0.57);
+    -moz-box-shadow: 3px 8px 3px -6px rgba(148,148,148,0.57);
+}
+
+.img-icons{
+    padding-left:2em;
+    padding-right:1em;
+}
+
+.check {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+/*-------------------------Hero Section--------------------------*/
+
+.hero{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    height: 100%;
+}
+
+.hero-content-area{
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-green-color);
+}
+
+.h-content{
+    width:30%;
+    position: absolute;
+    top:21.125rem;
+    left:14.25rem;
+}
+
+.h-img{
+    width:50%;
+    min-height: 640px;
+    margin:auto;
+    background-color:var(--white-color);
+    position: absolute;
+    top: 10%;
+    left: 47%;
+    background-image: url("../images/banner_img.png");
+    background-size: cover;
+}
+
+.h-btn{
+    background: var(--light-green-color);
+    border-radius: 48px;
+    padding: 1.5rem 2rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--text-green-color);
+    cursor: pointer;
+}
+
+.hero-text{
+    font-family: 'sailec';
+    font-style: normal;
+    font-size: 6.5rem;
+    color: var(--white-color);
+    line-height: 7.5rem;
+}
+
+.hero-subtext{
+    font-family:'sailecmedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:var(--light-gray-color);
+    padding: 3rem 0 3rem 0;
+    width: 60%;
+    line-height: 2.2rem;
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    padding-top:4.5rem;
+}
+
+.bty-txt{
+    padding-bottom:2.5rem;
+    font-family: 'saileclight';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.5em;
+    color:var(--white-color);
+}
+
+
+/*-------------------------Products Section--------------------------*/
+
+
+.shop-title-text{
+    padding:6rem 0 5rem 0;
+    font-family: 'sailecmedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 120.5%;
+    color:var(--blue-color);
+}
+
+.shop-now{
+    border: 1px solid var(--dark-green-color);
+    box-sizing: border-box;
+    border-radius: 1.9rem;
+    padding:1.375rem 2.5rem;
+    font-family: 'saileclight';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.06rem;
+    line-height: 1.25rem;
+    color:var(--blue-color);
+    position: absolute;
+    right:8rem;
+    text-decoration: none;
+}
+
+.shop-now::after{
+    content: url("../images/shop-arrow.svg");
+    padding-left:0.9rem;
+    padding-right:1rem;
+    width:10%;
+    position: relative;
+    right:-11px;
+}
+
+.shop-now:hover{
+    background-color: #000;
+    color:var(--white-color);
+}
+
+.shop-now:hover::after{
+    fill: #FFF;
+}
+
+
+.product-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    row-gap: 4rem;
+    column-gap: 2.5rem; 
+    text-align: center;
+
+    width:84%;
+    margin:0 auto 7rem auto;
+}
+
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.product-name{
+    font-family: 'sailecmedium';
+font-style: normal;
+font-weight: 500;
+font-size: 3.375rem;
+padding-top:2.125rem;
+padding-bottom: 1.1875rem;
+color: #151442;
+}
+
+.price{
+font-family: 'saileclight';
+font-style: normal;
+font-weight: 600;
+font-size: 1.4rem;
+color: #8F9095;
+padding:1.625rem 0;
+}
+
+.description{
+    font-family:'sailecmedium';
+font-style: normal;
+font-weight: 200;
+font-size: 1.6rem;
+text-align: center;
+color: #8F9095;
+padding:0 2.5rem;
+}
+
+.product img{
+    width:100%;
+    height: 35rem;
+}
+
+
+
+
+
+    /*------------------  MEDIA QUERRY  ------------------*/
+  
+
+    @media screen and (min-width: 320px) and (max-width: 501px) {
+        .container{
+            display: grid;
+            grid-template-rows: 0.4fr 0.2fr;
+        }
+
+        .hero-buttons{
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .container{
+            display: grid;
+            grid-template-rows: 0.6fr 0.2fr;
+        }
+
+        .hero{
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 100%;
+        }
+
+        .h-content{
+        width: 80%;
+        position: absolute;
+        top: 21.125rem;
+        left: 6rem;
+        }
+
+        .hero-buttons{
+            width:60%;
+        }
+
+        .h-btn{
+            margin-bottom:2rem;
+            font-size:1.7rem;
+        }
+        
+        .hero-subtext{
+            width: 80%;
+            line-height: 3.2rem;
+            font-size: 1.8rem;
+        }
+
+        .hero-img-area{
+            display: none;
+        }
+
+        nav .btn {
+            display: none;
+        }
+
+        .nav-ul li a {
+            font-size: 1.8rem;
+        }
+    
+        .hamburger {
+            display: inline-block;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            cursor: pointer;
+        }
+    
+        .hamburger img {
+            width: 3rem;
+        }
+
+        .nav-ul {
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 0;
+            margin-top: 15rem;
+            background-color:var(--white-color);
+            border: 1px solid skyblue;
+            border-radius: .3rem;
+            transform: translateY(-200%);
+            transition:  .9s;
+            z-index: 999;
+            position: absolute;
+            right: 0;
+        }
+    
+        .nav-ul li {
+            padding: 1rem 0;
+            font: 1.6rem;
+        }
+    
+        li a {
+            color: var(--dark-blue);
+            font-weight: 400;
+        }
+    
+        li a:hover {
+            color: var(--lime-green);
+        *}
+    
+        nav ul li a:hover::before {
+            opacity: 0;
+        }
+
+        .shop-title-text{
+            font-size: 3.5rem;
+        }
+
+        .shop-now{
+            position: absolute;
+            right: 4rem;
+        }
+
+
+        .product-name{
+            font-size: 2.75rem;
+        }
+    
+        /* SLIDE THE MENU WHEN THE HAMBURGER IS CLICKED */
+    
+        #toggle:checked ~ .nav-ul {
+           transform: translateY(1%); 
+        }
+    
+        #toggle:checked ~ .hamburger {
+            border-radius: .3rem;
+            padding: .4rem;
+            z-index:9999;
+        }
+
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .container {
+            display: grid;
+            grid-template-rows: 0.6fr 0.5fr;
+        }
+
+        .nav-ul{
+            right:1.5rem;
+        }
+
+        .nav-ul li{
+            margin:0 1rem;
+        }
+
+        .hero-buttons{
+            width:85%;
+        }
+
+        .shop-now{
+            margin-top:1rem;
+            position: absolute;
+            right:9rem;
+        }
+
+        .product-area{
+            column-gap:0.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+        .container {
+            display: grid;
+            grid-template-rows: 1fr 0.5fr;
+        }
+
+        .shop-now{
+            margin-top:1rem;
+            position: absolute;
+            right:9rem;
+        }
+
+        .product-area{
+            column-gap:0.5rem;
+        }
+    }
+
